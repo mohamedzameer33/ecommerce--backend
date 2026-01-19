@@ -10,7 +10,7 @@ public class CorsConfig implements WebMvcConfigurer {
     @Override
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/**")  // Allow all endpoints
-                .allowedOrigins("http://localhost:5173")  // Vite port
+                .allowedOrigins("https://zam-ecomm.vercel.app")  // Vite port
                 .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                 .allowedHeaders("*")
                 .allowCredentials(true);
