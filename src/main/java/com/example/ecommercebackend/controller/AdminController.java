@@ -19,7 +19,7 @@ public class AdminController {
     // Simple hardcoded admin login (improve in prod)
     @PostMapping("/login")
     public ResponseEntity<String> login(@RequestBody Map<String, String> credentials) {
-        if ("admin".equals(credentials.get("username")) && "````".equals(credentials.get("password"))) {
+        if ("admin".equals(credentials.get("username")) && "zameer@admin".equals(credentials.get("password"))) {
             return ResponseEntity.ok("Logged in");
         }
         return ResponseEntity.badRequest().body("Invalid credentials");
