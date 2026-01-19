@@ -32,6 +32,11 @@ public class AuthController {
         }
     }
 
+    @GetMapping("/")
+public String home() {
+    return "Backend is LIVE 😎🔥";
+}
+
     @PostMapping("/login")
     public ResponseEntity<?> login(@RequestBody User loginRequest) {
         try {
